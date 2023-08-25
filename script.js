@@ -82,4 +82,11 @@ function startGame(playerGame) {
 function resetGame() {
     // document.querySelector('.gameOutCome').innerText = " ";
     document.querySelector('.gameScore').innerText = `Wins: ${gameScore.Wins = 0} - Losses: ${gameScore.Losses = 0} - Ties: ${gameScore.Ties = 0}`;
+};
+if (gameScore === null){
+    gameScore = {
+        Wins : 0,
+        Losses : 0,
+        Ties : 0
+    };
 }
